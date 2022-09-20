@@ -15,6 +15,7 @@
 	--potfolio-btn-bg: #F5F4FA;
 	--white-color: #ffffff;
 	--black-color: #000000;
+	--team-bg: #F5F4FA;
 }
 
 body {
@@ -57,6 +58,10 @@ img {
 	cursor: pointer;
 }
 
+.section {
+	padding: 94px 0;
+}
+
 .title {
 	font-weight: 700;
 	font-size: 36px;
@@ -74,6 +79,30 @@ img {
 
 /* ----------------------------- Шапка----------------------------- */
 
+.header {
+	padding: 24px 0 25px;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+}
+
+.menu-list {
+	display: flex;
+	align-items: center;
+}
+
+.menu-item+.menu-item {
+	margin-left: 50px;
+}
+
 .logo {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
@@ -82,10 +111,16 @@ img {
 	font-size: 26px;
 	line-height: 1.29;
 	letter-spacing: 0.03em;
+	margin-right: 93px;
 }
 
 .logo>span {
 	color: var(--brand-color);
+}
+
+.connection-nav-header {
+	display: flex;
+	align-items: center;
 }
 
 .menu-link {
@@ -104,6 +139,10 @@ img {
 
 .menu-link:active {
 	color: var(--main-color);
+}
+
+.connection-item+.connection-item {
+	margin-left: 50px;
 }
 
 .header-link {
@@ -169,12 +208,29 @@ img {
 	border: 0;
 }
 
+/* ----------------------------- Переваги ----------------------------- */
+
+.benefits {
+	padding-top: 94px;
+}
+
+.benefits-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.benefits-item {
+	max-width: 270px;
+}
+
 .benefits-item-title {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
+	margin-bottom: 10px;
 }
 
 .benefits-item-text {
@@ -186,15 +242,42 @@ img {
 
 /* ----------------------------- Чим ми займаємось ----------------------------- */
 
-
+.about-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
 
 /* ----------------------------- Наша команда ----------------------------- */
+
+.team {
+	background-color: var(--team-bg);
+}
+
+.team-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.team-item {
+	max-width: 270px;
+	background-color: var(--white-color);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+	text-align: center;
+}
+
+.team-content {
+	margin: 30px 0;
+}
 
 .team-item-name {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.19;
 	letter-spacing: 0.03em;
+	margin-bottom: 10px;
 }
 
 .team-item-descr {
@@ -259,7 +342,9 @@ img {
 }
 
 .footer-logo {
+	display: inline-block;
 	color: var(--white-color);
+	margin-bottom: 20px;
 }
 
 .footer-address {
@@ -268,6 +353,11 @@ img {
 	line-height: 1.17;
 	letter-spacing: 0.03em;
 	color: var(--white-color);
+	margin-bottom: 9px;
+}
+
+.connection-item-footer+.connection-item-footer {
+	margin-top: 9px;
 }
 
 .footer-link {
