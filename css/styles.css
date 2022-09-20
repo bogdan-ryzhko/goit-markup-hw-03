@@ -27,8 +27,25 @@ body {
 	border: 0;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	display: block;
+}
+
 .list {
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .link {
@@ -36,7 +53,17 @@ body {
 }
 
 .btn {
+	font-family: inherit;
 	cursor: pointer;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	letter-spacing: 0.03em;
+	margin-bottom: 50px;
+	text-align: center;
 }
 
 .container {
@@ -48,7 +75,7 @@ body {
 /* ----------------------------- Шапка----------------------------- */
 
 .logo {
-	font-family: 'Raleway';
+	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	color: var(--black-color);
 	font-style: normal;
@@ -117,7 +144,6 @@ body {
 }
 
 .hero-btn {
-	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	line-height: 1.88;
 	letter-spacing: 0.06em;
@@ -160,14 +186,7 @@ body {
 
 /* ----------------------------- Чим ми займаємось ----------------------------- */
 
-.title {
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.17;
-	letter-spacing: 0.03em;
-	margin-bottom: 50px;
-	text-align: center;
-}
+
 
 /* ----------------------------- Наша команда ----------------------------- */
 
@@ -191,7 +210,6 @@ body {
 }
 
 .navigation-btn {
-	font-family: 'Roboto';
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.63;
