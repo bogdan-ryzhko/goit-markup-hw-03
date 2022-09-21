@@ -173,7 +173,7 @@ img {
 
 .hero {
 	text-align: center;
-	background-color: var(--secondary-bg);
+	background: var(--secondary-bg);
 	padding: 200px 0;
 }
 
