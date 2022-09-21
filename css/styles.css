@@ -338,6 +338,7 @@ img {
 
 .production-list {
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
 	margin-top: calc(-1 * var(--card-list-gap));
 	margin-left: calc(-1 * var(--card-list-gap));
