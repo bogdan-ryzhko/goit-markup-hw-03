@@ -16,7 +16,7 @@
 	--white-color: #ffffff;
 	--black-color: #000000;
 	--team-bg: #F5F4FA;
-	--card-list-gap: 30px;
+	--card-list-gap: 27px;
 }
 
 body {
@@ -338,7 +338,6 @@ img {
 
 .production-list {
 	display: flex;
-	justify-content: center;
 	flex-wrap: wrap;
 	margin-top: calc(-1 * var(--card-list-gap));
 	margin-left: calc(-1 * var(--card-list-gap));
@@ -354,11 +353,14 @@ img {
 .production-link {
 	display: inline-block;
 	border: 1px solid #EEEEEE;
-	padding-bottom: 20px;
 }
 
 .production-img {
 	margin-bottom: 20px;
+}
+
+.production-content {
+	padding: 0 0 20px 24px;
 }
 
 .production-name {
@@ -366,7 +368,6 @@ img {
 	line-height: 2;
 	letter-spacing: 0.06em;
 	color: var(--main-color);
-	padding-left: 24px;
 	margin-bottom: 4px;
 }
 
@@ -376,7 +377,6 @@ img {
 	line-height: 1.88;
 	letter-spacing: 0.03em;
 	color: var(--descr-color);
-	padding-left: 24px;
 }
 
 /* ----------------------------- Футер ----------------------------- */
