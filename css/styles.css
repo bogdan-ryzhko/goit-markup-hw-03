@@ -346,7 +346,7 @@ img {
 
 .production-list>.production-item {
 	flex-basis: calc(100% / 3 - var(--card-list-gap));
-	background: var(--white-color);
+	background-color: var(--white-color);
 	margin-top: var(--card-list-gap);
 	margin-left: var(--card-list-gap);
 }
