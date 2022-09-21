@@ -16,6 +16,7 @@
 	--white-color: #ffffff;
 	--black-color: #000000;
 	--team-bg: #F5F4FA;
+	--card-list-gap: 30px;
 }
 
 body {
@@ -330,13 +331,6 @@ img {
 
 /* ----------------------------- Продукція ----------------------------- */
 
-.production-item {
-	max-width: 370px;
-	background: var(--white-color);
-	border: 1px solid #EEEEEE;
-	padding-bottom: 20px;
-}
-
 .production-title {
 	font-size: 0;
 	opacity: 0;
@@ -346,7 +340,21 @@ img {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: 30px;
+	margin-top: calc(-1 * var(--card-list-gap));
+	margin-left: calc(-1 * var(--card-list-gap));
+}
+
+.production-list>.production-item {
+	flex-basis: calc(100% / 3 - var(--card-list-gap));
+	background: var(--white-color);
+	margin-top: var(--card-list-gap);
+	margin-left: var(--card-list-gap);
+}
+
+.production-link {
+	display: inline-block;
+	border: 1px solid #EEEEEE;
+	padding-bottom: 20px;
 }
 
 .production-img {
